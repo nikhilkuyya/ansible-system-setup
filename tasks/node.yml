@@ -1,0 +1,11 @@
+- name: Install Node with brew
+  homebrew: 
+   name: node
+   state: present
+
+- name: Install n
+  npm: 
+   name: n
+   global: yes
+   state: present
+

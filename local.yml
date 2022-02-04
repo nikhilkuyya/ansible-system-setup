@@ -1,0 +1,17 @@
+- hosts: localhost
+#  vars:
+#    source_key: "./.ssh/id_rsa"
+#    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
+#  pre_tasks:
+#  - name: Brew update
+#    become: true
+#    community.general.homebrew:
+#      update_homebrew: yes
+#      upgrade_all: yes
+#    tags:
+#    - core
+#    - node
+  tasks:
+    - include: tasks/dev-prod.yml
+    - include: tasks/node.yml
+    - include: tasks/db.yml
