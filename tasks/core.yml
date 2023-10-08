@@ -1,0 +1,14 @@
+- name: Install System packages 1
+  become: true
+  apt: 
+    name: ["build-essential","software-properties-common", "locales","unzip"]
+  tags:
+  - install
+  - core
+- name: Install System Packages 2
+  become: true
+  apt:
+    name: ["curl","git", "htop","lsof","ubuntu-mate-desktop"]
+  tags:
+  - install
+  - core
