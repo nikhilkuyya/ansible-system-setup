@@ -1,7 +1,0 @@
----
-- name: Install mysql
-  homebrew:
-   name: mysql 
-   state: present
-  tags:
-   - db
