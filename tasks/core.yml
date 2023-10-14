@@ -8,7 +8,7 @@
 - name: Install System Packages 2
   become: true
   apt:
-    name: ["curl","git", "htop","lsof","ubuntu-mate-desktop"]
+    name: ["curl","git", "htop","lsof","ubuntu-mate-desktop","foremost"]
   tags:
   - install
   - core

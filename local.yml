@@ -11,9 +11,26 @@
       - core  
   tasks:
     - include_tasks: tasks/git-setup.yml
+      tags:
+        - git-personal
     - include_tasks: tasks/core.yml
+      tags:
+        - install
+        - core
     - include_tasks: tasks/node-setup.yml
+      tags:
+        - install
+        - node
     - include_tasks: tasks/npm-packages.yml
+      tags:
+        - install
+        - node
     - include_tasks: tasks/zsh-setup.yml 
+      tags:
+        - zsh
     - include_tasks: tasks/neovim.yml 
+      tags:
+        - neovim
     - include_tasks: tasks/productivity.yml 
+      tags:
+        - productivity
