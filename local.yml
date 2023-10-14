@@ -8,7 +8,12 @@
       state: present
     tags:
       - install
-      - core  
+      - core
+      - git-personal
+      - node
+      - neovim
+      - productivity
+      - docker
   tasks:
     - include_tasks: tasks/git-setup.yml
       tags:
@@ -34,3 +39,6 @@
     - include_tasks: tasks/productivity.yml 
       tags:
         - productivity
+    - include_tasks: tasks/docker-setup.yml
+      tags:
+        - docker
