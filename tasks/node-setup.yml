@@ -45,3 +45,8 @@
   tags:
     - install
     - node
+- name: Install volta
+  shell: curl https://get.volta.sh | bash
+  tags:
+    - install
+    - node

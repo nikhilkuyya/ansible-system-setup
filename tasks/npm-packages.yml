@@ -33,4 +33,18 @@
   tags:
     - install
     - node
+- name: Install Playwright
+  npm:
+    name: playwright
+    global: yes
+  tags:
+    - install
+    - node
 
+- name: Install Evaluatory
+  npm:
+    name: evaluatory
+    global: yes
+  tags:
+    - install
+    - node

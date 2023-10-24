@@ -1,7 +1,7 @@
 - name: Install System packages 1
   become: true
   apt: 
-    name: ["build-essential","software-properties-common", "locales","unzip"]
+    name: ["build-essential","software-properties-common", "locales","unzip", "sudo"]
   tags:
   - install
   - core
